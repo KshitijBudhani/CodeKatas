@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		293794AA1B67D9B30029DF0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293794A91B67D9B30029DF0E /* AppDelegate.swift */; };
+		293794AC1B67D9B30029DF0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293794AB1B67D9B30029DF0E /* ViewController.swift */; };
+		293794AF1B67D9B30029DF0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 293794AD1B67D9B30029DF0E /* Main.storyboard */; };
+		293794B11B67D9B30029DF0E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 293794B01B67D9B30029DF0E /* Images.xcassets */; };
+		293794B41B67D9B30029DF0E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 293794B21B67D9B30029DF0E /* LaunchScreen.xib */; };
+		293794C01B67D9B30029DF0E /* CodaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293794BF1B67D9B30029DF0E /* CodaTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		293794BA1B67D9B30029DF0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2937949C1B67D9B30029DF0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 293794A31B67D9B30029DF0E;
+			remoteInfo = Coda;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		293794A41B67D9B30029DF0E /* Coda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coda.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		293794A81B67D9B30029DF0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		293794A91B67D9B30029DF0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		293794AB1B67D9B30029DF0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		293794AE1B67D9B30029DF0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		293794B01B67D9B30029DF0E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		293794B31B67D9B30029DF0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		293794B91B67D9B30029DF0E /* CodaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		293794BE1B67D9B30029DF0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		293794BF1B67D9B30029DF0E /* CodaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodaTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		293794A11B67D9B30029DF0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		293794B61B67D9B30029DF0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2937949B1B67D9B30029DF0E = {
+			isa = PBXGroup;
+			children = (
+				293794A61B67D9B30029DF0E /* Coda */,
+				293794BC1B67D9B30029DF0E /* CodaTests */,
+				293794A51B67D9B30029DF0E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		293794A51B67D9B30029DF0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				293794A41B67D9B30029DF0E /* Coda.app */,
+				293794B91B67D9B30029DF0E /* CodaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		293794A61B67D9B30029DF0E /* Coda */ = {
+			isa = PBXGroup;
+			children = (
+				293794A91B67D9B30029DF0E /* AppDelegate.swift */,
+				293794AB1B67D9B30029DF0E /* ViewController.swift */,
+				293794AD1B67D9B30029DF0E /* Main.storyboard */,
+				293794B01B67D9B30029DF0E /* Images.xcassets */,
+				293794B21B67D9B30029DF0E /* LaunchScreen.xib */,
+				293794A71B67D9B30029DF0E /* Supporting Files */,
+			);
+			path = Coda;
+			sourceTree = "<group>";
+		};
+		293794A71B67D9B30029DF0E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				293794A81B67D9B30029DF0E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		293794BC1B67D9B30029DF0E /* CodaTests */ = {
+			isa = PBXGroup;
+			children = (
+				293794BF1B67D9B30029DF0E /* CodaTests.swift */,
+				293794BD1B67D9B30029DF0E /* Supporting Files */,
+			);
+			path = CodaTests;
+			sourceTree = "<group>";
+		};
+		293794BD1B67D9B30029DF0E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				293794BE1B67D9B30029DF0E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		293794A31B67D9B30029DF0E /* Coda */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 293794C31B67D9B30029DF0E /* Build configuration list for PBXNativeTarget "Coda" */;
+			buildPhases = (
+				293794A01B67D9B30029DF0E /* Sources */,
+				293794A11B67D9B30029DF0E /* Frameworks */,
+				293794A21B67D9B30029DF0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Coda;
+			productName = Coda;
+			productReference = 293794A41B67D9B30029DF0E /* Coda.app */;
+			productType = "com.apple.product-type.application";
+		};
+		293794B81B67D9B30029DF0E /* CodaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 293794C61B67D9B30029DF0E /* Build configuration list for PBXNativeTarget "CodaTests" */;
+			buildPhases = (
+				293794B51B67D9B30029DF0E /* Sources */,
+				293794B61B67D9B30029DF0E /* Frameworks */,
+				293794B71B67D9B30029DF0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				293794BB1B67D9B30029DF0E /* PBXTargetDependency */,
+			);
+			name = CodaTests;
+			productName = CodaTests;
+			productReference = 293794B91B67D9B30029DF0E /* CodaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2937949C1B67D9B30029DF0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Tonic Design";
+				TargetAttributes = {
+					293794A31B67D9B30029DF0E = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					293794B81B67D9B30029DF0E = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 293794A31B67D9B30029DF0E;
+					};
+				};
+			};
+			buildConfigurationList = 2937949F1B67D9B30029DF0E /* Build configuration list for PBXProject "Coda" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2937949B1B67D9B30029DF0E;
+			productRefGroup = 293794A51B67D9B30029DF0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				293794A31B67D9B30029DF0E /* Coda */,
+				293794B81B67D9B30029DF0E /* CodaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		293794A21B67D9B30029DF0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				293794AF1B67D9B30029DF0E /* Main.storyboard in Resources */,
+				293794B41B67D9B30029DF0E /* LaunchScreen.xib in Resources */,
+				293794B11B67D9B30029DF0E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		293794B71B67D9B30029DF0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		293794A01B67D9B30029DF0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				293794AC1B67D9B30029DF0E /* ViewController.swift in Sources */,
+				293794AA1B67D9B30029DF0E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		293794B51B67D9B30029DF0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				293794C01B67D9B30029DF0E /* CodaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		293794BB1B67D9B30029DF0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 293794A31B67D9B30029DF0E /* Coda */;
+			targetProxy = 293794BA1B67D9B30029DF0E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		293794AD1B67D9B30029DF0E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				293794AE1B67D9B30029DF0E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		293794B21B67D9B30029DF0E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				293794B31B67D9B30029DF0E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		293794C11B67D9B30029DF0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		293794C21B67D9B30029DF0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		293794C41B67D9B30029DF0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Coda/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		293794C51B67D9B30029DF0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Coda/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		293794C71B67D9B30029DF0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CodaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coda.app/Coda";
+			};
+			name = Debug;
+		};
+		293794C81B67D9B30029DF0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CodaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Coda.app/Coda";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2937949F1B67D9B30029DF0E /* Build configuration list for PBXProject "Coda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				293794C11B67D9B30029DF0E /* Debug */,
+				293794C21B67D9B30029DF0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		293794C31B67D9B30029DF0E /* Build configuration list for PBXNativeTarget "Coda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				293794C41B67D9B30029DF0E /* Debug */,
+				293794C51B67D9B30029DF0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		293794C61B67D9B30029DF0E /* Build configuration list for PBXNativeTarget "CodaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				293794C71B67D9B30029DF0E /* Debug */,
+				293794C81B67D9B30029DF0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2937949C1B67D9B30029DF0E /* Project object */;
+}
