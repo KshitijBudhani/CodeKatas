@@ -1,0 +1,17 @@
+{
+  "name": "session_one",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "find . -type f -name \"*.test.js\" -print0 | xargs -0 ./node_modules/.bin/mocha --reporter spec"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "3.0.0",
+    "lodash": "^3.10.0",
+    "mocha": "2.2.5"
+  }
+}
