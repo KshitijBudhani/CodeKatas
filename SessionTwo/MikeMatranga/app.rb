@@ -1,3 +1,5 @@
+#!/usr/bin/env ruby
+
 require 'csv'
 
 class BabyNameParser
@@ -6,9 +8,18 @@ class BabyNameParser
     @file_path = file_path
   end
 
-  def baby_names_by_ethnicity
+  def args
+    {
+      'asian' => 'ASIAN AND PACIFIC ISLANDER',
+      'black' => 'BLACK NON HISPANIC',
+      'hispanic' => 'HISPANIC',
+      'white' => 'WHITE NON HISPANIC'
+    }
+  end
+
+  def baby_names_by_ethnicity(ethinicity)
     parse_baby_names
-    @names_by_ethnicity
+    @names_by_ethnicity[ethinicity]
   end
 
   private
@@ -41,4 +52,8 @@ end
 
 parser = BabyNameParser.new("./data.csv")
 
-puts parser.baby_names_by_ethnicity
+if parser.args.has_key?(ARGV[0])
+  puts parser.baby_names_by_ethnicity(parser.args[ARGV[0]])
+else
+  puts "possibilities: asian, black, hispanic, white"
+end
