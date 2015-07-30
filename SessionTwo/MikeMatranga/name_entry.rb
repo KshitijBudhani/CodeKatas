@@ -7,6 +7,10 @@ class NameEntry
     @birth_year = entry['BRTH_YR']
   end
 
+  def description
+    "Name: #{@name} Count: #{@count_string} Ethnicity: #{@ethnicity}"
+  end
+
   def name_with_count
     "Name: #{@name} Count: #{@count_string}"
   end
