@@ -17,9 +17,11 @@ class BabyNameParser
     }
   end
 
+  # given an ethnicity returns the 5 most popular baby names baby name, count
   def baby_names_by_ethnicity(ethinicity)
     parse_baby_names
-    @names_by_ethnicity[ethinicity]
+    x = @names_by_ethnicity[ethinicity].sort_by { |entry| entry[:count] }.reverse!
+    x[0..4]
   end
 
   private
@@ -50,10 +52,28 @@ class BabyNameParser
   end
 end
 
+class BabyNamePrinter
+  def print_baby_names_with_count(name_entries)
+    output_string = ''
+
+    name_entries.each do |entry|
+      output_string << "Name: " << entry[:name] << " Count: " << entry[:count].to_s << "\n"
+    end
+
+    output_string
+  end
+end
+
+
 parser = BabyNameParser.new("./data.csv")
+printer = BabyNamePrinter.new
 
 if parser.args.has_key?(ARGV[0])
-  puts parser.baby_names_by_ethnicity(parser.args[ARGV[0]])
+  names = parser.baby_names_by_ethnicity(parser.args[ARGV[0]])
+  puts printer.print_baby_names_with_count(names)
 else
   puts "possibilities: asian, black, hispanic, white"
 end
+
+
+
