@@ -18,10 +18,9 @@ class BabyNameParser
   end
 
   # given an ethnicity returns the 5 most popular baby names baby name, count
-  def baby_names_by_ethnicity(ethinicity)
+  def baby_names_by_ethnicity(ethnicity)
     parse_baby_names
-    x = @names_by_ethnicity[ethinicity].sort_by { |entry| entry[:count] }.reverse!
-    x[0..4]
+    @names_by_ethnicity[ethnicity].sort_by { |entry| entry.count }.reverse![0..4]
   end
 
   private
@@ -33,10 +32,10 @@ class BabyNameParser
     CSV.foreach(@file_path, col_sep: ',', quote_char: '"', headers: :first_row, converters: [:numeric], skip_blanks: true) do |row|
       name_entry = build_name_entry_from_row(row)
 
-      if @names_by_ethnicity.has_key?(row['ETHCTY'])
-        @names_by_ethnicity[row['ETHCTY']] << name_entry
+      if @names_by_ethnicity.has_key?(name_entry.ethnicity)
+        @names_by_ethnicity[name_entry.ethnicity] << name_entry
       else
-        @names_by_ethnicity[row['ETHCTY']] = [name_entry]
+        @names_by_ethnicity[name_entry.ethnicity] = [name_entry]
       end
       names << name_entry
     end
@@ -44,11 +43,7 @@ class BabyNameParser
   end
 
   def build_name_entry_from_row(row)
-    name_entry = {}
-    name_entry[:birth_year] = row['BRTH_YR']
-    name_entry[:name] = row['NAME']
-    name_entry[:count] = row['CNT']
-    name_entry
+    BabyNameEntry.new(row)
   end
 end
 
@@ -57,13 +52,34 @@ class BabyNamePrinter
     output_string = ''
 
     name_entries.each do |entry|
-      output_string << "Name: " << entry[:name] << " Count: " << entry[:count].to_s << "\n"
+      output_string << entry.name_with_count << "\n"
     end
 
     output_string
   end
 end
 
+class BabyNameEntry
+  def initialize(entry)
+    @name = entry['NAME']
+    @count_string = entry['CNT'].to_s
+    @count = entry['CNT']
+    @ethnicity = entry['ETHCTY']
+    @birth_year = entry['BRTH_YR']
+  end
+
+  def name_with_count
+    "Name: #{@name} Count: #{@count_string}"
+  end
+
+  def count
+    @count
+  end
+
+  def ethnicity
+    @ethnicity
+  end
+end
 
 parser = BabyNameParser.new("./data.csv")
 printer = BabyNamePrinter.new
@@ -74,6 +90,3 @@ if parser.args.has_key?(ARGV[0])
 else
   puts "possibilities: asian, black, hispanic, white"
 end
-
-
-
