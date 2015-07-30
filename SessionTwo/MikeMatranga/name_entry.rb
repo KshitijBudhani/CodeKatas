@@ -11,11 +11,19 @@ class NameEntry
     "Name: #{@name} Count: #{@count_string}"
   end
 
+  def ethnicity_with_count
+    "Ethnicity: #{@ethnicity} Count: #{@count_string}"
+  end
+
   def count
     @count
   end
 
   def ethnicity
     @ethnicity
+  end
+
+  def name
+    @name
   end
 end
