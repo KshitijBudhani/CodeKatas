@@ -6,13 +6,16 @@ load 'printer.rb'
 parser = Parser.new("./data.csv")
 printer = Printer.new
 
-if parser.ethnicity_args.has_key?(ARGV[0])
-  names = parser.baby_names_by_ethnicity(parser.ethnicity_args[ARGV[0]])
+possible_ethnicities = parser.ethnicity_args
+name_or_ethnicity = ARGV[0]
+
+if possible_ethnicities.has_key?(name_or_ethnicity)
+  names = parser.baby_names_by_ethnicity(possible_ethnicities[name_or_ethnicity])
   puts printer.print_baby_names_with_count(names)
 else
-  stats = parser.ethnicity_stats_for_name(ARGV[0])
+  stats = parser.ethnicity_stats_for_name(name_or_ethnicity)
   if stats.nil?
-    puts "No results for #{ARGV[0]}"
+    puts "No results for #{name_or_ethnicity}"
   else
     puts printer.print_ethnicity_stats(stats)
   end

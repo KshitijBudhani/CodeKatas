@@ -34,18 +34,16 @@ class Parser
 
     CSV.foreach(@file_path, col_sep: ',', quote_char: '"', headers: :first_row, converters: [:numeric], skip_blanks: true) do |row|
       name_entry = build_name_entry_from_row(row)
+      build_object(@names_by_ethnicity, name_entry.ethnicity, name_entry)
+      build_object(@ethinicity_count_by_name, name_entry.name, name_entry)
+    end
+  end
 
-      if @names_by_ethnicity.has_key?(name_entry.ethnicity)
-        @names_by_ethnicity[name_entry.ethnicity] << name_entry
-      else
-        @names_by_ethnicity[name_entry.ethnicity] = [name_entry]
-      end
-
-      if @ethinicity_count_by_name.has_key?(name_entry.name)
-        @ethinicity_count_by_name[name_entry.name] << name_entry
-      else
-        @ethinicity_count_by_name[name_entry.name] = [name_entry]
-      end
+  def build_object(object, key, entry)
+    if object.has_key?(key)
+      object[key] << entry
+    else
+      object[key] = [entry]
     end
   end
 
